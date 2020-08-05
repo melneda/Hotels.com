@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test">
+    <classes>
+      <class name="com.qa.hotels.tests.HomePageTest"/>
+      <class name="com.qa.hotels.tests.FiveStarHotelsTest"/>
+      <class name="com.qa.hotels.tests.FourStarHotelsTest"/>
+      <class name="com.qa.hotels.tests.ThreeStarHotelsTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.qa.hotels.tests.ThreeStarHotelsTest">
+        <methods>
+          <include name="verifyThreeStarHotelsTitleTest"/>
+          <include name="showHiltonAvailablein3StarVerify"/>
+        </methods>
+      </class> <!-- com.qa.hotels.tests.ThreeStarHotelsTest -->
+      <class name="com.qa.hotels.tests.FiveStarHotelsTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="fiveStarCitycenterVerify"/>
+        </methods>
+      </class> <!-- com.qa.hotels.tests.FiveStarHotelsTest -->
+      <class name="com.qa.hotels.tests.FourStarHotelsTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.hotels.tests.FourStarHotelsTest -->
+      <class name="com.qa.hotels.tests.HomePageTest">
+        <methods>
+          <include name="verifyMainPageTitleTest"/>
+          <include name="fillFormTest"/>
+        </methods>
+      </class> <!-- com.qa.hotels.tests.HomePageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Hotels.com Regression Suite">
+<listeners>
+<!-- 	<listener class-name="com.qa.hotelscom.listener.ScreenshotListener" />
+ -->	<listener class-name="com.qa.hotelscom.listener.TestAllureListener" />
+   <!--  <listener class-name="com.qa.hotelscom.listener.ExtentReportListener" />
+    <listener class-name="com.qa.hotelscom.listener.pdfListener" /> -->
+    
+	</listeners>
+
+
+
+
+
+<parameter name="browser" value="chrome"/>
+  <test name="Hotels.com Functional Regression Test">
+    <classes>
+      <class name="com.qa.hotels.tests.HomePageTest"/>
+      <!-- <class name="com.qa.hotels.tests.FiveStarHotelsTest"/>
+      <class name="com.qa.hotels.tests.FourStarHotelsTest"/>
+      <class name="com.qa.hotels.tests.ThreeStarHotelsTest"/> -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

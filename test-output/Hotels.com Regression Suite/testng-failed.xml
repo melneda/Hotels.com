@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Hotels.com Regression Suite]">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="com.qa.hotelscom.listener.TestAllureListener"/>
+  </listeners>
+  <test name="Hotels.com Functional Regression Test">
+    <classes>
+      <class name="com.qa.hotels.tests.HomePageTest"/>
+    </classes>
+  </test> <!-- Hotels.com Functional Regression Test -->
+</suite> <!-- Failed suite [Hotels.com Regression Suite] -->
